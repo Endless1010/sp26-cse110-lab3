@@ -1,1 +1,12 @@
-Fill in the passphrases here.
+9: 2020_sucked
+3: HTMLRules
+7: SofiaWasHere
+6: ThisIsJSyay
+8: coolcoolcool3x
+5: ShraviBeatsReact
+4: JavaScriptRocks
+11: ElaineFirst
+2: iHateC++
+1: WongAvery
+12: iHeartWebDev
+10: listenToPetalcore
