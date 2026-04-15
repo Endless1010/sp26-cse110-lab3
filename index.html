@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSE 110 Kickoff Notes</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+    <header>
+      <h1>CSE 110 Kickoff Notes</h1>
+      <h2>Group 16 — Cutie Devs</h2>
+      <h3>April 11, 2026 | 10:00 AM - 11:00 AM | Zoom</h3>
+      <nav>
+        <ul>
+          <li><a href="#attendance">Attendance</a></li>
+          <li><a href="#agenda">Agenda & Notes</a></li>
+          <li><a href="#multimedia">Multimedia</a></li>
+          <li><a href="#feedback">Meeting Feedback Form</a></li>
+        </ul>
+      </nav>
+      <hr>
+    </header>
+
+    <main>
+      <section id="attendance">
+        <b>Attendance List (Note Taker & Facilitator: Yuval Pesok):</b>
+        <ul>
+          <li>Yuval Pesok</li>
+          <li>Roy Martinez</li>
+          <li>Bowen Wu</li>
+          <li>Jordan Junaidi</li>
+          <li>Harvey Zhang</li>
+          <li>Fariba Tokhi</li>
+          <li>Koji</li>
+          <li>Alec Lichtenberger</li>
+          <li>Angelo Sespene</li>
+          <li>Jenny Zhu</li>
+        </ul>
+      </section>
+
+      <br>
+
+      <section id="agenda">
+        <b>Meeting Agenda:</b>
+        <ol>
+          <li>Introductions & icebreaker</li>
+          <li>Review course/project expectations</li>
+          <li>Discuss team roles & responsibilities</li>
+          <li>Establish team norms & ground rules</li>
+          <li>Ensure GitHub access for all members</li>
+          <li>Decide on recurring meeting cadence</li>
+          <li>Action items & next steps</li>
+        </ol>
+
+        <p>
+          <b>Introductions & Roles:</b> <strong>Everyone</strong> shared their experience and goals. 
+        </p>
+        
+        <p>
+          <b>Norms & Branching:</b> We will set hard deadlines, avoid waiting until the last second, and communicate actively in Slack. We will use the <i>name/issue#/type</i> convention for GitHub branches. Everyone felt <em>very</em> strongly that pull requests must have at least 1 reviewer before merging to maintain code quality without bottlenecking the team.
+        </p>
+
+        <p>
+          <b>Action Items (Due 4/12):</b> Draft and sign the team contract, set up the README.md, have everyone add to the team.md page, and add questions to the doc before our TA meeting. Our recurring meeting cadence will be Mondays at 4 PM on Zoom!
+        </p>
+
+        <details>
+          <summary>View Old Business & Items Not Discussed</summary>
+          <p>None — this is the first meeting. The first assignment/group project has not been assigned yet.</p>
+        </details>
+      </section>
+
+      <section id="multimedia">
+        <h3>Meeting Artifacts</h3>
+        
+        <div>
+          <span>Whiteboard Diagram:</span><br>
+          <img src="cse110lab2.jpg" alt="Whiteboard sketch of the database schema and API routes" width="400">
+        </div>
+
+        <br>
+
+        <div>
+          <span>Audio Recording:</span><br>
+          <audio controls>
+            <source src="Rita Atkinson Residences.m4a" type="audio/mp4">
+          </audio>
+        </div>
+
+        <br>
+
+        <div>
+          <span>Video Recording:</span><br>
+          <video controls width="400">
+            <source src="IMG_6816.mov" type="video/quicktime">
+          </video>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <hr>
+      <section id="feedback">
+        <h3>Post-Meeting Form</h3>
+        <form action="/submit" method="POST">
+          <fieldset>
+            <legend>Attendee Feedback</legend>
+            
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"><br><br>
+
+            <label for="meeting-date">Meeting Date:</label>
+            <input type="date" id="meeting-date" name="meeting-date"><br><br>
+
+            <label for="role">Primary Role:</label>
+            <input list="roles" id="role" name="role">
+            <datalist id="roles">
+              <option value="Frontend">
+              <option value="Backend">
+              <option value="QA">
+            </datalist><br><br>
+
+            <label for="department">Department:</label>
+            <select id="department" name="department">
+              <option value="engineering">Engineering</option>
+              <option value="design">Design</option>
+              <option value="management">Management</option>
+            </select><br><br>
+
+            <p>Was this meeting productive?</p>
+            <input type="radio" id="yes" name="productive" value="yes">
+            <label for="yes">Yes</label><br>
+            <input type="radio" id="no" name="productive" value="no">
+            <label for="no">No</label><br><br>
+
+            <input type="checkbox" id="followup" name="followup" value="yes">
+            <label for="followup">Require a follow-up meeting</label><br><br>
+
+            <label for="comments">Additional Comments:</label><br>
+            <textarea id="comments" name="comments" rows="4" cols="30"></textarea><br><br>
+
+            <button type="submit">Submit Feedback</button>
+          </fieldset>
+        </form>
+      </section>
+    </footer>
+  </body>
+</html>
