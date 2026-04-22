@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+:root {
+  --main-bg: #fdfdfd;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--main-bg, white);
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  line-height: 1.6;
+}
+
+header {
+  /* Using shorthand margin with auto centering */
+  margin: 1cm auto; /* shorthand margin + absolute unit: cm already used, adding 'auto' here */
+  /* Using shorthand padding */
+  padding: 2rem 1rem; /* shorthand padding */
+  /* Using shorthand border */
+  border: 2px solid rgba(0, 0, 0, 0.1); /* shorthand border */
+  border-radius: 8px;
+  text-align: center;
+  max-width: 80vw;
+  min-width: 320px;
+}
+
+h1,
+h2,
+h3 {
+  color: hsl(210, 50%, 20%);
+}
+
+h1 + h2 {
+  text-decoration: underline;
+}
+
+h2 ~ h3 {
+  color: color-mix(in srgb, black 60%, blue);
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  background-color: #ffffff;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  /* longhand padding */
+  padding-top: 10px; /* absolute unit: px */
+  padding-right: 0;
+  padding-bottom: 10px;
+  padding-left: 0;
+}
+
+main > section {
+  /* longhand margin */
+  margin-top: 2cm;
+  margin-bottom: 2cm;
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+
+p.intro-text {
+  color: color(display-p3 0.1 0.5 0.1);
+}
+
+.intro-text {
+  font-size: 14pt; /* absolute unit: pt */
+}
+
+a {
+  text-decoration: none;
+  color: rgb(0, 102, 204);
+}
+
+a:hover {
+  color: orange;
+}
+
+button {
+  /* longhand border on button */
+  border-style: solid;
+  border-color: hsl(210, 50%, 40%);
+  border-width: 1px;
+  border-radius: 4px;
+  /* shorthand padding on button */
+  padding: 0.5em 1.5em; /* relative unit: em — third relative unit alongside rem and vw */
+  font-size: 1rem;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+hr {
+  display: none;
+}
+
+input[type="text"] {
+  width: 100%;
+}
+
+#multimedia {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  align-items: start;
+}
+
+#multimedia div {
+  position: relative;
+}
+
+#multimedia img {
+  width: 100%;
+  height: auto;
+}
+
+details {
+  display: block;
+}
+
+details p {
+  display: inline-block;
+}
+
+/* display: inline example */
+details summary {
+  display: inline; /* fourth display value demonstrated */
+}
+
+/* Using % as third relative unit in footer */
+footer {
+  width: 90%;
+  margin: 0 auto;
+}
+
+section:has(form) {
+  background-color: rgb(240, 240, 245);
+  /* shorthand margin inside form section */
+  margin: 2rem auto;
+  /* longhand padding inside form section */
+  padding-top: 1rem;
+  padding-right: 2rem;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+}
+
+fieldset {
+  /* shorthand border on fieldset */
+  border: 1px dashed #aaa; /* third absolute unit already covered above; this reuses px */
+  border-radius: 6px;
+  /* shorthand padding */
+  padding: 1rem 2rem;
+}
+
+#agenda {
+  & ol {
+    margin: 1em;
+  }
+}
+
+@media (max-width: 768px) {
+  #multimedia {
+    grid-template-columns: 1fr;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+}
